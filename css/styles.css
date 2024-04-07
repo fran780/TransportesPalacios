@@ -1,0 +1,278 @@
+/* Estilos Generales */
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Menu de Navegacion */
+header{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #072c57;
+    color: #fff;
+}
+
+header h1{
+    color: #fff;
+    font-size: 18px;
+}
+
+header .abrir-menu{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:48px;
+    height:48px;
+    top:0.1rem;
+    right: 0.1rem;
+    padding:0.25rem;
+}
+
+.abrir-menu{
+    display: none;
+}
+
+.cerrar-menu{
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.nav-list li:hover{
+    background-color: #06809e;
+    }
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Fin de  Menu de Navegacion */
+
+
+/* carusel */
+.carusel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 3px 5px #c2c2c2;
+    margin-bottom: 1rem;
+    z-index: 1001;
+}
+
+.carusel .caruseltrack {
+    position: relative;
+    display: flex;
+    width: max-content;
+    height: 400px;
+}
+
+.carusel .caruseltrack .caruselItem {
+    position: relative;
+    width: 100vw;
+}
+
+.carusel .caruseltrack .caruselItem img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carusel .caruseltrack .caruselItem h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.carusel .navigator{
+    width:100vw;
+    background-color: transparent;
+    display:flex;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    padding:1rem;
+}
+.carusel .navigator .dot{
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: 0px 0.5rem;
+    cursor: pointer;
+}
+/* Fin carusel */
+
+/* Seccion Descripcion */
+.descripcion {
+    padding: 20px; 
+    margin: 0 auto 20px; 
+    max-width: 90%; 
+}
+  
+.descripcion h2 {
+    text-align: center;
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+  
+.descripcion p {
+    text-align: justify;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+/* Fin Seccion Descripcion */
+
+
+/* Seccion de Eventos y Noticias */
+.notieventos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto 20px; 
+  }
+  
+  .item {
+    flex-basis: calc(50% - 20px); /* ajusta el ancho de cada item según el diseño */
+    margin-bottom: 20px;
+  }
+  
+  .item h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .item p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  .item h3 {
+    color: #444;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .item picture {
+    margin-top: 10px;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+/* Fin de Seccion de Eventos y Noticias */
+
+
+/* Pie de Página */
+footer {
+    background-color: #000e1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+/* Fin de Pie de Página */
+
+/* Menu Hamburguesa, responsive celular */
+@media (max-width: 721px){
+
+    header .abrir-menu div{
+        width:80%;
+        border-radius: 3px;
+        background-color: #fff;
+        height: 5px;
+        margin: 5px 0px; 
+    }
+
+    .nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #08255a;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1002;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        color: #fff;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav-list li a {
+        color: #e9ecef;
+    }
+
+    .abrir-menu{
+        display: block;
+    }
+
+    .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .carusel {
+        height: 680px;
+    }
+
+    .carusel .caruseltrack .caruselItem img {
+        min-height: 680px;
+    }
+}
+
+/* Responsive Tablet */
+@media (min-width: 1025px) {
+
+}

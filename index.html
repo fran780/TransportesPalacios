@@ -3,44 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio - Repuestos XYZ</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Inicio - Transportes Palacios</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/carusel.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header>
-      <h1>Repuestos XYZ</h1>
-      <nav>
-        <ul>
+      <h1>Logo TP</h1>
+      <div class="abrir-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav class="nav">
+        <button class="cerrar-menu">x</button>
+        <ul class="nav-list">
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="about.html">Acerca de Nosotros</a></li>
-          <li><a href="programs.html">Nuestros Productos</a></li>
-          <li><a href="how-to-help.html">Cómo Comprar</a></li>
-          <li><a href="gallery.html">Galería de Fotos</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="events.html">Eventos</a></li>
-          <li><a href="contact.html">Contáctenos</a></li>
-          <li><a href="donations.html">Promociones Especiales</a></li>
-          <li><a href="faq.html">Preguntas Frecuentes</a></li>
+          <li><a href="pages/acercade.html">Acerca de Nosotros</a></li>
+          <li><a href="pages/programas.html">Nuestros Programas</a></li>
+          <li><a href="pages/ayuda.html">Ayuda</a></li>
+          <li><a href="pages/galeria.html">Galería de Fotos</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="pages/eventos.html">Eventos</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+          <li><a href="pages/donaciones.html">Donaciones</a></li>
+          <li><a href="pages/preguntas.html">Preguntas Frecuentes</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <h2>Encuentra los repuestos que tu vehículo necesita</h2>
-        <p>Calidad garantizada y al mejor precio del mercado.</p>
-        <a href="programs.html">Explorar Productos</a>
-      </section>
-      <section class="news">
-        <h2>Noticias Recientes</h2>
-        <!-- Aquí puedes insertar noticias o enlaces a artículos del blog -->
-      </section>
-      <section class="events">
-        <h2>Próximos Eventos</h2>
-        <!-- Información o enlaces a próximos eventos -->
-      </section>
+        <section class="carusel">
+            <section class="caruseltrack">
+                <div class="caruselItem">
+                    <picture>
+                        <source srcset="https://incinerox.com.ec/wp-content/uploads/2018/01/pexels-ivan-3089685.jpg" media="min-width:1025px" />
+                        <source srcset="https://incinerox.com.ec/wp-content/uploads/2018/01/pexels-ivan-3089685.jpg" media="min-width:721px" />
+                        <img src="https://incinerox.com.ec/wp-content/uploads/2018/01/pexels-ivan-3089685.jpg" alt="" />
+                    </picture>
+                </div>
+                <div class="caruselItem">
+                    <picture>
+                        <source data-srcset="https://www.automekano.com/static/f1c7180dbd48e02dc13e71eb9f42db2f/a2efe/ud-trucks-quester-cwe330-volqueta-Motor-01.webp" media="min-width:1025px" />
+                        <source data-srcset="https://www.automekano.com/static/f1c7180dbd48e02dc13e71eb9f42db2f/a2efe/ud-trucks-quester-cwe330-volqueta-Motor-01.webp" media="min-width:721px" />
+                        <img data-srcset="https://www.automekano.com/static/f1c7180dbd48e02dc13e71eb9f42db2f/a2efe/ud-trucks-quester-cwe330-volqueta-Motor-01.webp" alt="" />
+                    </picture>
+                </div>
+                <div class="caruselItem">
+                    <picture>
+                        <source data-srcset="https://www.automekano.com/static/bee74315b2d34b9b6a292268e4d144b9/a2efe/ud-trucks-quester-cwe420-volqueta-capacidades-01.webp" media="min-width:1025px" />
+                        <source data-srcset="https://www.automekano.com/static/bee74315b2d34b9b6a292268e4d144b9/a2efe/ud-trucks-quester-cwe420-volqueta-capacidades-01.webp" media="min-width:721px" />
+                        <img data-srcset="https://www.automekano.com/static/bee74315b2d34b9b6a292268e4d144b9/a2efe/ud-trucks-quester-cwe420-volqueta-capacidades-01.webp" alt="" />
+                    </picture>
+                </div>
+                <div class="caruselItem">
+                    <picture>
+                        <source data-srcset="https://i0.wp.com/materialesvmg.com/wp-content/uploads/2023/10/IMG_01.png?fit=1920%2C967&ssl=1" media="min-width:1025px" />
+                        <source data-srcset="https://i0.wp.com/materialesvmg.com/wp-content/uploads/2023/10/IMG_01.png?fit=1920%2C967&ssl=1" media="min-width:721px" />
+                        <img data-srcset="https://i0.wp.com/materialesvmg.com/wp-content/uploads/2023/10/IMG_01.png?fit=1920%2C967&ssl=1" alt="" />
+                    </picture>
+                </div>
+            </section>
+        </section>
+        <section class="descripcion">
+          <h2>Descripción</h2>
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eius voluptate dolorum at mollitia impedit officia, unde maxime repudiandae quod blanditiis quia ipsum reprehenderit cum consectetur libero porro qui nesciunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eius voluptate dolorum at mollitia impedit officia, unde maxime repudiandae quod blanditiis quia ipsum reprehenderit cum consectetur libero porro qui nesciunt.
+          </P><br>
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eius voluptate dolorum at mollitia impedit officia, unde maxime repudiandae quod blanditiis quia ipsum reprehenderit cum consectetur libero porro qui nesciunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eius voluptate dolorum at mollitia impedit officia, unde maxime repudiandae quod blanditiis quia ipsum reprehenderit cum consectetur libero porro qui nesciunt.
+          </P><br>
+          <h2>Misión</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus id architecto voluptatem libero suscipit officiis obcaecati quam tenetur perferendis, fugiat molestiae autem voluptatum praesentium, recusandae itaque! Expedita molestiae veniam eveniet.</p>
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eius voluptate dolorum at mollitia impedit officia, unde maxime repudiandae quod blanditiis quia ipsum reprehenderit cum consectetur libero porro qui nesciunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eius voluptate dolorum at mollitia impedit officia, unde maxime repudiandae quod blanditiis quia ipsum reprehenderit cum consectetur libero porro qui nesciunt.
+          </P>
+        </section>
+        <section class="notieventos">
+          <div class="item">
+            <h2>Noticia 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur in officiis numquam consequatur? Porro id repellat soluta. Debitis quas atque laborum omnis maxime, delectus aperiam! Eum rerum doloribus magni aut!</p>
+          </div>
+          <div class="item">
+            <h2>Noticia 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit sapiente magnam alias veritatis voluptatum quos minima voluptates. Voluptatibus neque adipisci odit? Voluptatem quis fuga numquam doloribus, veniam quisquam culpa dolorem!</p>
+          </div>
+          <div class="item">
+            <h3>Evento 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque molestiae odio deserunt consectetur consequuntur tempora sequi omnis vel at, id delectus quasi, accusantium placeat molestias assumenda dignissimos, repellendus error.</p>
+            <picture>
+              <source srcset="https://www.diariodexalapa.com.mx/incoming/4epnvc-obra-materiales.jpg/ALTERNATES/LANDSCAPE_768/Obra%20MATERIALES.JPG" media="(min-width: 1024px)">
+              <source srcset="https://www.diariodexalapa.com.mx/incoming/4epnvc-obra-materiales.jpg/ALTERNATES/LANDSCAPE_768/Obra%20MATERIALES.JPG" media="(min-width: 480px)">
+              <img src="https://www.diariodexalapa.com.mx/incoming/4epnvc-obra-materiales.jpg/ALTERNATES/LANDSCAPE_768/Obra%20MATERIALES.JPG" alt="ensalada de frutas" >
+            </picture>
+          </div>
+          <div class="item">
+            <h3>Evento 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque molestiae odio deserunt consectetur consequuntur tempora sequi omnis vel at, id delectus quasi, accusantium placeat molestias assumenda dignissimos, repellendus error.</p>
+            <picture>
+              <source srcset="https://www.diariodexalapa.com.mx/incoming/4epnvc-obra-materiales.jpg/ALTERNATES/LANDSCAPE_768/Obra%20MATERIALES.JPG" media="(min-width: 1024px)">
+              <source srcset="https://www.diariodexalapa.com.mx/incoming/4epnvc-obra-materiales.jpg/ALTERNATES/LANDSCAPE_768/Obra%20MATERIALES.JPG" media="(min-width: 480px)">
+              <img src="https://www.diariodexalapa.com.mx/incoming/4epnvc-obra-materiales.jpg/ALTERNATES/LANDSCAPE_768/Obra%20MATERIALES.JPG" alt="ensalada de frutas" >
+            </picture>
+          </div>
+        </section>
     </main>
     <footer>
-      <p>Contacto: info@repuestosxyz.com</p>
+      <p>Contacto: info@ejemplo.com</p>
       <p>© 2024 Repuestos XYZ. Todos los derechos reservados.</p>
     </footer>
   </body>
