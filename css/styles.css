@@ -522,6 +522,46 @@ footer {
     .carusel .caruseltrack .caruselItem img {
         min-height: 680px;
     }
+
+    /*Responsive pagina Contacto*/
+    .contactenos
+    {
+        padding: 0px;
+    }
+
+    .caja
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "form"
+            "info"
+            "map";
+    }
+
+    .cajaform .row50
+    {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .cajainput
+    {
+        width: 100%;
+    }
+
+    .contacto
+    {
+        padding: 30px;
+    }
+
+    .map
+    {
+        min-height: 300px;
+        padding: 0;
+    }
+    /*FIN Responsive pagina Contacto*/
 }
 
 /* Responsive Tablet */
