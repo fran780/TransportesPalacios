@@ -708,6 +708,86 @@ footer {
   bottom: 0px;
 }
 
+/*Pagina Donaciones*/
+
+/* Seccion Descripcion */
+.explicacion {
+  background-color: #0e3959;
+  color: #fff;
+  padding: 60px;
+  margin-top: 28px; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 1rem;
+}
+
+
+.explicacion h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.explicacion p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.5;
+}
+/* Fin Seccion Descripcion */
+
+.porque {
+  
+  padding: 60px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.porque h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.porque h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.porque p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.formulario {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.formulario {
+  width: 28%; /* Ajusta el ancho según tus preferencias */
+  margin: 20px auto; /* Centra la tarjeta horizontalmente */
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Bordes redondeados para el efecto de tarjeta */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el efecto de elevación */
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*Fin Pagina Donaciones*/
+
 /* Fin de pagina nuestros programas */
 
 
