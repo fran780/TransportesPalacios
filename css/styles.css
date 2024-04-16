@@ -124,10 +124,16 @@ header .abrir-menu {
   background-color: #00ccff;
   border: 1px solid #ffffff;
   border-radius: 50%;
-  margin: 0px 0.5rem;
+  margin: 0px 1rem;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 /* Fin carusel */
+
+.contenido-inicio{
+  margin-top:70px;
+}
+
 
 /* Seccion Descripcion */
 
@@ -146,11 +152,6 @@ header .abrir-menu {
   margin-bottom: 10px;
 }
 
-.descripcion h2 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 10px;
-}
 
 .descripcion p {
   text-align: justify;
@@ -167,12 +168,6 @@ header .abrir-menu {
   padding: 60px;
   margin: 0 auto;
   width: 80%;
-}
-
-.mision h1 {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
 }
 
 .mision h2 {
@@ -200,25 +195,23 @@ header .abrir-menu {
   border-radius: 1rem;
 }
 
-.vision h1 {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
 .vision h2 {
   text-align: center;
   font-size: 35px;
   margin-bottom: 10px;
 }
 
-.vision p {
+.vision p{
   text-align: justify;
   font-size: 20px;
   line-height: 1.5;
 }
 /* Fin Seccion vision */
 
+.EquipoCarga h2{
+  text-align: center;
+  font-size: 35px;
+}
 
 /* Seccion de Tarjetas*/
 .todoCards {
@@ -260,72 +253,210 @@ header .abrir-menu {
   color: #666;
   font-size: 16px;
 }
-
 /* Fin de Seccion de tarjetas*/
 
-/*Inicio Preguntas frecuentes*/
-
-.titulo {
-  font-size: 50px;
+footer {
+  background-color: #000e1f;
+  color: white;
   text-align: center;
-  margin-top: 80px;
-  margin-bottom: 40px;
-}
-
-.preguntas-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding-bottom: 10rem;
-}
-
-.preguntas {
-  border-bottom: 1px solid #000000;
-}
-.preguntas button {
+  padding: 20px;
+  /*position: fixed;*/
+  bottom: 0;
   width: 100%;
-  background-color: #f4f4f4;
+}
+
+/* FIN PAGINA INICIO */
+
+
+/* PAGINA ACERCA DE */
+.bk1 {
+  background-color: #f8f8f1;
+  text-align: center;
+}
+.bk2 {
+  background-color: #167d97f3;
+  color: #fff;
+  height: 600px;
+  align-content: center;
+}
+
+.nuestra-historia,
+.nuestra-vision {
+  padding: 20px;
+  margin: 0 auto 0px;
+  max-width: 70%;
+}
+
+.nuestra-historia h2,
+.nuestra-vision h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.nuestra-historia p,
+.proveedores p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.datos h2 {
+  font-size: 24px;
+}
+
+.datos p {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* FIN DE PAGINA ACERCA DE */
+
+
+/* PAGINA DE NUESTROS PROGRAMAS*/
+.Titulo-nuestrosprogramas{
+  margin-top: 40px;
+  text-align: center;
+}
+.Titulo-nuestrosprogramas h1{
+  font-size: 45px;
+}
+.proyectos,.bk2 .proveedores {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 15px;
-  border: none;
-  outline: none;
-  font-size: 22px;
-  color: #000000;
-  font-weight: 700;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: auto;
+  max-width: 100%;
+  margin-bottom: 100px;
+}
+
+.proyectos .mejora-calles,
+.proyectos .ayuda-comunitaria,
+.proyectos .ambito-deportivo,
+.bk2 .proveedores {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+
+.proyectos img, .bk2 .proveedores img {
+  margin-top: 100px;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 200px;
+}
+
+.proyectos h2,.bk2 .proveedores h2 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.proyectos p {
+  font-size: 1em;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.footer-programas{
+  /* position: fixed; */
+  bottom: 0px;
+}
+
+/* FIN DE PAGINA NUESTROS PROGRAMAS */
+
+/* PAGINA DE AYUDA */
+/* FIN DE PAGINA DE AYUDA */
+
+/* PAGINA DE GALERIA DE FOTOS*/
+.galeria {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.galeria h2 {
+  margin-bottom: 20px;
+}
+
+.contenedor-imagenes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.contenedor-imagenes img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 
-.ultimo {
-  padding: 0 0 25px 0;
+.contenedor-imagenes img:hover {
+  transform: scale(1.05);
 }
 
-.preguntas p {
-  font-size: 22px;
-  max-height: 0;
-  opacity: 0;
-  line-height: 1.5;
-  overflow: hidden;
-  transition: all 0.6s ease;
-}
-.d-arrow {
-  transition: transform 0.5s ease-in;
-  color: #000000;
-}
-
-/*cada que hay un click*/
-.preguntas p.show {
-  max-height: 300px;
-  opacity: 1;
-  padding: 0px 15px 30px 15px;
-}
-.preguntas button .d-arrow.rotate {
-  transform: rotate(180deg);
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
 }
 
-/*FIn Preguntas Frecuentes*/
+.modal-content {
+  display: block;
+  max-width: 60%;
+  max-height: 80vh;
+  margin: auto;
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+}
 
-/*Pagina de Contacto*/
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer_galeria {
+  background-color: #000e1f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* FIN DE PAGINA DE GALERIA DE FOTOS*/
+
+/* PAGINA DE BLOG */
+/* FIN DE PAGINA DE BLOG */
+
+
+/* PAGINA DE EVENTOS */
+/* FIN DE PAGINA DE EVENTOS */
+
+/* PAGINA DE CONTACTO */
 
 .contactenos {
   position: relative;
@@ -512,196 +643,9 @@ header .abrir-menu {
   height: 100%;
 }
 
-/*Fin de Pagina de Contacto*/
+/* FIN DE PAGINA DE CONTACTO*/
 
-/*Pagina de Galeria*/
-.galeria {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.galeria h2 {
-  margin-bottom: 20px;
-}
-
-.contenedor-imagenes {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
-  padding: 0 20px;
-}
-
-.contenedor-imagenes img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.contenedor-imagenes img:hover {
-  transform: scale(1.05);
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-content {
-  display: block;
-  max-width: 60%;
-  max-height: 80vh;
-  margin: auto;
-  transform: translateY(-50%);
-  position: relative;
-  top: 50%;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  color: #fff;
-  font-size: 35px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-}
-
-.footer_galeria {
-  background-color: #000e1f;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-/*Fin de Pagina de Galeria*/
-
-/* Pie de Página */
-footer {
-  background-color: #000e1f;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  /*position: fixed;*/
-  bottom: 0;
-  width: 100%;
-}
-/* Fin de Pie de Página */
-
-/* Pagina acerda de */
-.bk1 {
-  background-color: #f8f8f1;
-  text-align: center;
-}
-.bk2 {
-  background-color: #167d97f3;
-  color: #fff;
-  height: 600px;
-  align-content: center;
-}
-
-.nuestra-historia,
-.nuestra-vision {
-  padding: 20px;
-  margin: 0 auto 0px;
-  max-width: 70%;
-}
-
-.nuestra-historia h2,
-.nuestra-vision h2 {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-.nuestra-historia p,
-.proveedores p {
-  text-align: justify;
-  font-size: 20px;
-  line-height: 1.5;
-}
-.datos h2 {
-  font-size: 24px;
-}
-
-.datos p {
-  text-align: center;
-  font-size: 18px;
-}
-/* Fin de pagina acerca de */
-
-
-/* Pagina nuestros programas */
-.Titulo-nuestrosprogramas{
-  margin-top: 40px;
-  text-align: center;
-}
-.Titulo-nuestrosprogramas h1{
-  font-size: 45px;
-}
-.proyectos,.bk2 .proveedores {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin: auto;
-  max-width: 100%;
-  margin-bottom: 100px;
-}
-
-.proyectos .mejora-calles,
-.proyectos .ayuda-comunitaria,
-.proyectos .ambito-deportivo,
-.bk2 .proveedores {
-  width: 300px;
-  margin-bottom: 20px;
-}
-
-
-.proyectos img, .bk2 .proveedores img {
-  margin-top: 100px;
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 200px;
-}
-
-.proyectos h2,.bk2 .proveedores h2 {
-  font-size: 1.2em;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-.proyectos p {
-  font-size: 1em;
-  line-height: 1.4;
-  text-align: justify;
-}
-
-.footer-programas{
-  /* position: fixed; */
-  bottom: 0px;
-}
-
-/*Pagina Donaciones*/
+/* PAGINA DE DONACIONES*/
 
 /* Seccion Descripcion */
 .explicacion {
@@ -779,12 +723,73 @@ footer {
 }
 
 
-/*Fin Pagina Donaciones*/
-
-/* Fin de pagina nuestros programas */
+/* FIN DE PAGINA DE DONACIONES*/
 
 
+/* PAGINA DE PREGUNTAS FRECUENTES*/
 
+.titulo {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.preguntas-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+}
+
+.preguntas {
+  border-bottom: 1px solid #000000;
+}
+.preguntas button {
+  width: 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  color: #000000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ultimo {
+  padding: 0 0 25px 0;
+}
+
+.preguntas p {
+  font-size: 22px;
+  max-height: 0;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+.d-arrow {
+  transition: transform 0.5s ease-in;
+  color: #000000;
+}
+
+/*cada que hay un click*/
+.preguntas p.show {
+  max-height: 300px;
+  opacity: 1;
+  padding: 0px 15px 30px 15px;
+}
+.preguntas button .d-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+/* FIN DE PAGINA DE PREGUNTAS FRECUENTES*/
+
+
+/* RESPONSIVE */
 
 /* Menu Hamburguesa, responsive celular */
 @media (max-width: 721px) {
@@ -884,7 +889,7 @@ footer {
 
 /* Responsive Tablet */
 @media (min-width: 1025px) {
-  .carusel {
+  /* .carusel {
     height: 780px;
-  }
+  } */
 }
