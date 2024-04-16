@@ -374,6 +374,7 @@ footer {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .galeria h1 {
@@ -383,17 +384,17 @@ footer {
 }
 
 .contenedor-imagenes {
-  display: grid;
+  /* display:flex;
+  flex-wrap: wrap; */
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 30px;
   padding: 0;
-  margin: 20px auto;
   width: calc(100% - 40px);
 }
 
 .contenedor-imagenes img {
-  width: 100%;
-  height: auto;
+  width: 400px;
+  height: 400px;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
