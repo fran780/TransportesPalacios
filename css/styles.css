@@ -788,6 +788,95 @@ footer {
 
 /* FIN DE PAGINA DE PREGUNTAS FRECUENTES*/
 
+/*Pagina experiencia*/
+
+.tituloco h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 36px; 
+  font-weight: bold; 
+  color: #333; 
+  text-align: center; 
+  text-transform: uppercase; 
+  margin-bottom: 20px; 
+  margin-top: 28px;
+  padding: 10px;
+ 
+} 
+.Colaborador1 {
+  background-color: #0e3959;
+  color: #fff;
+  padding: 60px;
+  margin-top: 28px; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 1rem;
+}
+
+
+.Colaborador1 h2 {
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.Colaborador1 p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.5;
+
+
+}
+
+.Colaborador2 {
+  
+  padding: 60px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+.Colaborador2 h2 {
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.Colaborador2 p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.Colaborador3 {
+  background-color: #0e3959;
+  color: #fff;
+  padding: 60px;
+  margin-top: 28px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3cap;
+  width: 80%;
+  border-radius: 1rem;
+}
+
+
+.Colaborador3 h2 {
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.Colaborador3 p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.5;
+
+
+}
+
+/*Fin Pagina experiencia*/
+
 
 /* RESPONSIVE */
 
