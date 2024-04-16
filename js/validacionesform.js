@@ -24,17 +24,13 @@ function formValidatorInit() {
         let hasErrors = false;
 
         if (isEmpty.test(txtNombre.value)) {
-            
             alert("Error: El Nombre no es valido");
             hasErrors = true;
-
         }
 
         if (isEmpty.test(txtApellido.value)) {
-            
             alert("Error: El Apellido no es valido");
             hasErrors = true;
-
         }
 
         if (!isValidEmail.test(txtCorreo.value)) {
@@ -48,16 +44,12 @@ function formValidatorInit() {
         }
 
         if (isEmpty.test(txtMen.value)) {
-            
             alert("Error: Escribe un mensaje para enviar");
             hasErrors = true;
 
         }
-        
         if (!hasErrors) {
-            
             contactForm.submit();
-
         }
 
     });

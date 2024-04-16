@@ -7,8 +7,9 @@ function formValidatorInit() {
     const txtApellido = document.getElementById("txtApellido");
     const txtCorreo = document.getElementById("txtCorreo");
     const txtTelefono = document.getElementById("txtTelefono");
-    const txtCantidad = document.getElementById("txtCantidad"); // Referencia al input de cantidad de donación
+    const txtCantidad = document.getElementById("txtCantidad");
     const txtMen = document.getElementById("txtMen");
+    const txtMen2 = document.getElementById("txtMen2");
 
     const btnProcesar = document.getElementById("btnProcesar");
     const contactForm = document.getElementById("contactForm");
