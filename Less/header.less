@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: @secondary-color;
+    color: @primary-color;
+    height: 80px;
+  
+    h1 {
+      color: @primary-color;
+      font-size: 18px;
+    }
+  
+    .abrir-menu {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 48px;
+      height: 48px;
+      top: 0.1rem;
+      right: 0.1rem;
+      padding: 0.25rem;
+    }
+  
+    .imglogotipotp {
+      border-radius: 50%;
+      border: 2px solid #000;
+    }
+  
+    .abrir-menu, .cerrar-menu {
+      display: none;
+    }
+  
+    .nav-list {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      gap: 1rem;
+  
+      > li:hover {
+        background-color: #4a6f9b;
+      }
+  
+      li a {
+        text-decoration: none;
+        color: @primary-color;
+      }
+    }
+  }
