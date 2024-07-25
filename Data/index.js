@@ -1,12 +1,12 @@
-import ejemplo1 from "./ejemploCarpeta";
+import preguntas from "./preguntas";
+
 
 const getPageContext = (page) =>{
 
     return {
-
-        ...ejemplo1,
+        ...preguntas,
     };
-
+    
 }
 
 export default getPageContext;
