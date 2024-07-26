@@ -1,0 +1,129 @@
+.panel {
+  z-index: 998;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1000;
+  margin: 0 auto;
+  .panel-item img {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 998;
+  }
+}
+
+.contenido {
+  margin-top: 70px;
+  .descripcion {
+    background-color: @secondary-color;
+    color: @primary-color;
+    padding: 50px;
+    margin: 0 auto;
+    width: 90vw;
+    border-radius: 1rem;
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+    }
+    p {
+      text-align: justify;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+  .mision {
+
+    padding: 50px;
+    margin: 0 auto;
+    width: 90vw;
+    color: @primary-color;
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+      color: @third-color;
+    }
+    p {
+      text-align: justify;
+      font-size: 18px;
+      line-height: 1.5;
+      color: @third-color;
+    }
+  }
+  .vision {
+    background-color: #0e3959;
+    color: #fff;
+    padding: 50px;
+    margin: 0 auto 20px;
+    width: 90vw;
+    border-radius: 1rem;
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+      color: @primary-color;
+    }
+    p {
+      text-align: justify;
+      font-size: 18px;
+      line-height: 1.5;
+      color: @primary-color;
+    }
+  }
+}
+
+.EquipoCarga h2 {
+  text-align: center;
+  font-size: 30px;
+  color: @third-color;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.todoCards {
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  gap: 60px;
+  .card {
+    width: 350px;
+    background-color: @primary-color;
+    border: 1px solid @alternative-color;
+    border-radius: 1rem;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 1px 1px @third-color;
+    h3 {
+        color: @third-color;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+      p {
+        color: @alternative-color;
+        font-size: 16px;
+      }
+    img {
+        width: 100%;
+        border-radius: 2rem;
+      }
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+}
+
+

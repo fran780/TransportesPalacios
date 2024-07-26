@@ -87,7 +87,7 @@ header .abrir-menu {
   margin: 0 auto;
 }
 
-.carusel .caruseltrack {
+/* .carusel .caruseltrack {
   position: relative;
   display: flex;
   width: max-content;
@@ -97,7 +97,7 @@ header .abrir-menu {
 .carusel .caruseltrack .caruselItem {
   position: relative;
   width: 100vw;
-}
+} */
 
 .carusel .caruseltrack .caruselItem img {
   top: 0px;

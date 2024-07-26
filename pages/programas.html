@@ -1,44 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>Programas - Transportes Palacios</title>
-  <link rel="stylesheet" href="/Less/styles.css" />
+  <link rel="stylesheet" href="/Less/style.less" />
   <script src="/js/script.js"></script>
+  <script src="/js/menu.js"></script>
 </head>
 
 <body>
-  <header>
-    <img src="/img/logotipotp.jpg" alt="Logotipo Transportes Palacios" class="imglogotipotp" />
-    <div class="abrir-menu">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <nav class="nav">
-      <button class="cerrar-menu">x</button>
-      <ul class="nav-list">
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="/pages/acercade.html">Acerca de Nosotros</a></li>
-        <li><a href="/pages/programas.html">Nuestros Programas</a></li>
-        <li><a href="/pages/Experiencia.html">Experiencia</a></li>
-        <li><a href="/pages/galeria.html">Galería de Fotos</a></li>
-        <li><a href="/pages/blog.html">Blog</a></li>
-        <li><a href="/pages/eventos.html">Eventos</a></li>
-        <li><a href="/pages/contacto.html">Contacto</a></li>
-        <li><a href="/pages/donaciones.html">Donaciones</a></li>
-        <li><a href="/pages/preguntas.html">Preguntas Frecuentes</a></li>
-      </ul>
-    </nav>
-  </header>
+  {{>header}}
   <main>
-    <section class="Titulo-nuestrosprogramas">
+    <section class="Titulo">
       <h1>Algunos de Nuestros Proyectos</h1>
     </section>
     <section class="proyectos">
-      <div class="mejora-calles">
+      <div class="card">
         <img src="/img/volqueta1.jpg" alt="Hombres Descargando Volqueta" />
         <h2>Mejora de Calles</h2>
         <p>
@@ -47,7 +27,7 @@
         </p>
       </div>
 
-      <div class="ayuda-comunitaria">
+      <div class="card">
         <img src="/img/volqueta1.jpg" alt="Hombres Descargando Volqueta" />
         <h2>Ayuda Comunitaria</h2>
         <p>
@@ -57,7 +37,7 @@
           reconstrucción de dichos caminos.
         </p>
       </div>
-      <div class="ambito-deportivo">
+      <div class="card">
         <img src="/img/volqueta1.jpg" alt="Hombres Descargando Volqueta" />
         <h2>Contribución en el Ámbito Deportivo</h2>
         <p>
