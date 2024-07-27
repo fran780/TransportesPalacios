@@ -1,7 +1,7 @@
 const header = {
     header: [
         {
-            item: "Inicio",
+            item: "Home",
             url: "/index.html"
         },
         {

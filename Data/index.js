@@ -1,8 +1,7 @@
 import fotos from "./galeria";
 import preguntas from "./preguntas";
 import header from "./header";
-import cards from "./cards";
-
+import footer from "./footer";
 
 const getPageContext = (page) =>{
 
@@ -10,7 +9,7 @@ const getPageContext = (page) =>{
         ...preguntas,
         ...fotos,
         ...header,
-        ...cards
+        ...footer
     };
 
 }
