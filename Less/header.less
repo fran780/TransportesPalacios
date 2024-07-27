@@ -23,7 +23,7 @@ header {
       a {
         text-decoration: none;
         color: @primary-color;;
-        font-size: 0.9rem;
+        font-size: @font-size-hf;
         text-align: center;
 
         &:hover {
@@ -34,7 +34,7 @@ header {
   }
 
   .toggle_btn {
-    color: #333;
+    color: @third-color;
     font-size: 2rem;
     cursor: pointer;
     display: none;
@@ -72,13 +72,14 @@ header {
       width: 200px;
     }
   }
+
   .nav-link {
-    color: white; // Estilo predeterminado
+    color: @primary-color;
     text-decoration: none;
 
     &.active {
-      color: #00FFFF; // Color de enlace activo
-      font-weight: bold; // Opcional: para resaltar más
+      color: #00FFFF;
+      font-weight: bold;
     }
   }
 

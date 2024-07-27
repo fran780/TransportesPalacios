@@ -4,7 +4,7 @@
   margin-bottom: 30px;
   padding: 8px;
   h1 {
-    font-size: 30px;
+    font-size: @font-size-h1;
     color: @third-color;
   }
 }
@@ -19,6 +19,7 @@
   padding-bottom: 50px;
   margin-bottom: 100px;
   gap: 60px;
+
   .card {
     width: 350px;
     background-color: @primary-color;
@@ -29,20 +30,27 @@
     margin-bottom: 20px;
     transition: all 0.3s ease;
     box-shadow: 0px 1px 1px @third-color;
-    h2 {
+
+    h3 {
       color: @third-color;
-      font-size: 20px;
+      font-size: @font-size-p;
       margin-top: 10px;
       margin-bottom: 5px;
+      text-align: center;
+      padding-bottom: 8px;
     }
+
     p {
       color: @third-color;
-      font-size: 16px;
+      font-size: @font-size-p;
+      text-align: justify;
     }
+
     img {
       width: 100%;
       border-radius: 2rem;
     }
+
   }
   .card:hover {
     transform: translateY(-5px);

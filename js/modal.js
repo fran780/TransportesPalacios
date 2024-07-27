@@ -7,13 +7,21 @@ document.addEventListener('DOMContentLoaded', function() {
     var images = document.querySelectorAll('.contenedor-imagenes img');
     images.forEach(function(image) {
         image.onclick = function() {
-            modal.style.display = "block";
-            img.src = this.src;
-            captionText.innerHTML = this.alt;
+            if (window.innerWidth > 1024) { // Solo mostrar el modal en resoluciones mayores a 1024px
+                modal.style.display = "block";
+                img.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
         }
     });
 
     closeBtn.onclick = function() {
         modal.style.display = "none";
     }
-  });
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth <= 1024) {
+            modal.style.display = 'none';
+        }
+    });
+});
