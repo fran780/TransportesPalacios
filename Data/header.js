@@ -1,23 +1,23 @@
 const header = {
     header: [
         {
-            item: "Home",
+            item: "Inicio",
             url: "/index.html"
         },
         {
-            item: "About",
+            item: "Nosotros",
             url: "/pages/acercade.html"
         },
         {
-            item: "Programs",
+            item: "Programas",
             url: "/pages/programas.html"
         },
         {
-            item: "Experiences",
+            item: "Experiencia",
             url: "/pages/Experiencia.html"
         },
         {
-            item: "Gallery",
+            item: "Galeria",
             url: "/pages/galeria.html"
         },
         {
@@ -25,15 +25,15 @@ const header = {
             url: "/pages/blog.html"
         },
         {
-            item: "Events",
+            item: "Eventos",
             url: "/pages/eventos.html"
         },
         {
-            item: "Contact",
+            item: "Contacto",
             url: "/pages/contacto.html"
         },
         {
-            item: "Donations",
+            item: "Donaciones",
             url: "/pages/donaciones.html"
         },
         {
