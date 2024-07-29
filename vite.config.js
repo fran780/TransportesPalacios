@@ -7,7 +7,7 @@ import handlebars from 'vite-plugin-handlebars';
 import handlerBarsContext from './Data';
 
 export default defineConfig({
-    //base: "/examen-segundo-parcial/",
+    base: "TrasportesPalacios",
     appType: 'mpa',
     build: {
         rollupOptions: {
