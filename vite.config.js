@@ -14,7 +14,7 @@ export default defineConfig(
             rollupOptions: {
                 input: Object.fromEntries(
                     [
-                        ...glob.sync('./!(dist)/*.html').map(
+                        ...glob.sync('./!(dist)/**/*.html').map(
                             file=> [
                                 file.slice(0, file.length - path.extname(file).length),
                                 resolve(__dirname, file)
