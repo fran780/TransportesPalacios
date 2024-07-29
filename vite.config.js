@@ -23,7 +23,7 @@ export default defineConfig({
     },
     plugins: [
         handlebars({
-            partialDirectory: resolve(__dirname, 'parciales'),
+            partialDirectory: resolve(__dirname, 'Parciales'),
             context: handlerBarsContext,
         }),
         htmlPurge({}),
