@@ -38,7 +38,7 @@ const header = {
         },
         {
             item: "FAQ",
-            url: "/preguntas.html"
+            url: "preguntas.html"
         }
     ]
 };
