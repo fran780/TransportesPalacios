@@ -15,14 +15,8 @@ export default defineConfig(
                 input: Object.fromEntries(
                     [
                         ...glob.sync('./!(dist)/**/*.html').map(
-                            file=> [
-                                file.slice(0, file.length - path.extname(file).length),
-                                resolve(__dirname, file)
-                            ]
-                        ),
-                        ...glob.sync('./*.html').map(
-                            file=> [
-                                file.slice(0, file.length - path.extname(file).length),
+                            file => [
+                                path.basename(file, path.extname(file)),
                                 resolve(__dirname, file)
                             ]
                         )
@@ -33,7 +27,7 @@ export default defineConfig(
         plugins: [
             handlebars({
                 partialDirectory: resolve(__dirname, 'Parciales'),
-                context: (pagePath)=>{
+                context: (pagePath) => {
                     console.log(pagePath);
                     const contextVariable = getPageContext(pagePath);
                     console.log(contextVariable);
