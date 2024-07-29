@@ -7,7 +7,7 @@ import handlebars from 'vite-plugin-handlebars';
 import handlerBarsContext from '.';
 
 export default defineConfig({
-    base: "",
+    base: "/TransportesPalacios/",
     appType: 'mpa',
     build: {
         rollupOptions: {
@@ -15,7 +15,7 @@ export default defineConfig({
                 [...glob.sync('./!(dist)/*.html').map(file => [
                     file.slice(0, file.length - path.extname(file).length), resolve(__dirname, file)
                 ]),
-                ...glob.sync('./pages/*.html').map(file => [
+                ...glob.sync('./*.html').map(file => [
                     file.slice(0, file.length - path.extname(file).length), resolve(__dirname, file)
                 ])]
             ),
