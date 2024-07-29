@@ -15,7 +15,7 @@ export default defineConfig({
                 [...glob.sync('./!(dist)/*.html').map(file => [
                     file.slice(0, file.length - path.extname(file).length), resolve(__dirname, file)
                 ]),
-                ...glob.sync('./**/*.html').map(file => [
+                ...glob.sync('./*.html').map(file => [
                     file.slice(0, file.length - path.extname(file).length), resolve(__dirname, file)
                 ])]
             ),
