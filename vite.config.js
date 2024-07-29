@@ -1,41 +1,32 @@
-import { defineConfig } from "vite";
-import * as glob from "glob";
-import { ViteMinifyPlugin } from 'vite-plugin-minify';
+import { defineConfig } from 'vite'
+import * as glob from 'glob';
+import path, { resolve } from 'node:path';
+import { ViteMinifyPlugin } from 'vite-plugin-minify'
 import htmlPurge from 'vite-plugin-purgecss';
-import path, { resolve } from "node:path";
 import handlebars from 'vite-plugin-handlebars';
-import getPageContext from './Data';
+import handlerBarsContext from './Data';
 
-export default defineConfig(
-    {
-        appType: "mpa",
-        base: "/TransportesPalacios/",
-        build: {
-            rollupOptions: {
-                input: Object.fromEntries(
-                    [
-                        ...glob.sync('./!(dist)/**/*.html').map(
-                            file => [
-                                path.basename(file, path.extname(file)),
-                                resolve(__dirname, file)
-                            ]
-                        )
-                    ]
-                )
-            }
+export default defineConfig({
+    base: "/TransportesPalacios/",
+    appType: 'mpa',
+    build: {
+        rollupOptions: {
+            input: Object.fromEntries(
+                [...glob.sync('./!(dist)/*.html').map(file => [
+                    file.slice(0, file.length - path.extname(file).length), resolve(__dirname, file)
+                ]),
+                ...glob.sync('./**/*.html').map(file => [
+                    file.slice(0, file.length - path.extname(file).length), resolve(__dirname, file)
+                ])]
+            ),
         },
-        plugins: [
-            handlebars({
-                partialDirectory: resolve(__dirname, 'Parciales'),
-                context: (pagePath) => {
-                    console.log(pagePath);
-                    const contextVariable = getPageContext(pagePath);
-                    console.log(contextVariable);
-                    return contextVariable;
-                }
-            }),
-            htmlPurge({}),
-            ViteMinifyPlugin()
-        ]
-    }
-);
+    },
+    plugins: [
+        handlebars({
+            partialDirectory: resolve(__dirname, 'Parciales'),
+            context: handlerBarsContext,
+        }),
+        htmlPurge({}),
+        ViteMinifyPlugin({}),
+    ]
+});
