@@ -4,7 +4,7 @@ import path, { resolve } from 'node:path';
 import { ViteMinifyPlugin } from 'vite-plugin-minify'
 import htmlPurge from 'vite-plugin-purgecss';
 import handlebars from 'vite-plugin-handlebars';
-import handlerBarsContext from './Data';
+import handlerBarsContext from '.';
 
 export default defineConfig({
     base: "",
