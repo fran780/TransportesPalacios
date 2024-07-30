@@ -26,7 +26,7 @@ const header = {
         },
         {
             item: "Eventos",
-            url: "/eventos.html"
+            url: "eventos.html"
         },
         {
             item: "Contacto",
