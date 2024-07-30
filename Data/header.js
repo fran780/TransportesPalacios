@@ -2,7 +2,7 @@ const header = {
     header: [
         {
             item: "Inicio",
-            url: "pages/index.html"
+            url: "index.html"
         },
         {
             item: "Nosotros",
