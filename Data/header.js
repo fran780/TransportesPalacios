@@ -2,43 +2,43 @@ const header = {
     header: [
         {
             item: "Inicio",
-            url: "index.html"
+            url: "pages/index.html"
         },
         {
             item: "Nosotros",
-            url: "acercade.html"
+            url: "pages/acercade.html"
         },
         {
             item: "Programas",
-            url: "programas.html"
+            url: "pages/programas.html"
         },
         {
             item: "Experiencia",
-            url: "Experiencia.html"
+            url: "pages/Experiencia.html"
         },
         {
             item: "Galeria",
-            url: "galeria.html"
+            url: "pages/galeria.html"
         },
         {
             item: "Blog",
-            url: "blog.html"
+            url: "pages/blog.html"
         },
         {
             item: "Eventos",
-            url: "eventos.html"
+            url: "pages/eventos.html"
         },
         {
             item: "Contacto",
-            url: "contacto.html"
+            url: "pages/contacto.html"
         },
         {
             item: "Donaciones",
-            url: "donaciones.html"
+            url: "pages/donaciones.html"
         },
         {
             item: "FAQ",
-            url: "preguntas.html"
+            url: "pages/preguntas.html"
         }
     ]
 };
