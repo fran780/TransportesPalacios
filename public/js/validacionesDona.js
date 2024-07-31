@@ -43,7 +43,6 @@ function formValidatorInit() {
             hasErrors = true;
         }
 
-        // Validación para la cantidad de donación que asegura que sea un número positivo
         if (txtCantidad.value <= 0 || isNaN(txtCantidad.value)) {
             alert("Error: La cantidad a donar debe ser un número positivo");
             hasErrors = true;
